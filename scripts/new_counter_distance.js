@@ -12,9 +12,6 @@ let currentLongitude = 0;
 
 startBtn1.addEventListener('click', function () {
   runFlag = true; 
-  navigator.geolocation.getCurrentPosition(success);
-  oldLatitude = currentLatitude;
-	oldLongitude = currentLongitude;
   countDistance();
 }); 
 
@@ -50,11 +47,15 @@ const success = (position) => {
 const countDistance = () => {
 	if (runFlag === true) {
 		navigator.geolocation.getCurrentPosition(success);
-		distanceKm += distanceCounter(oldLatitude, oldLongitude, currentLatitude, currentLongitude);
-		oldLatitude = currentLatitude;
+		const distBetweenPoints = distanceCounter(oldLatitude, oldLongitude, currentLatitude, currentLongitude);
+	  if (distBetweenPoints < 10) {
+      distanceKm += distBetweenPoints;
+    }
+    oldLatitude = currentLatitude;
 		oldLongitude = currentLongitude;
 		console.log(distanceKm);
-		document.querySelector('#distanceinkm').textContent = `${distanceKm}`.slice(0,5);
+    document.querySelector('#distanceinkm').textContent = `${distanceKm}`.slice(0,5);
+    
 		setTimeout(countDistance, 5000);
 	}
 };

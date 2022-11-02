@@ -8,16 +8,26 @@ body {
 }
 
 #distance h1 {
-	font-size: 30vh;
+	padding-top: 20vw;
+	font-size: 30vw;
 	margin: 0;
 }
 
 .secondlineelements {
 	height: 20vh;
 	float: left;
-	width: 30vw;
+	width: auto;
 	text-align: center;
-	font-size: 6vh;
+	font-size: 9vw;
+	padding: 1vw;
+}
+
+#speedminkm {
+	width: 20vw;
+}
+
+#speedkmh {
+	width:  20vw;
 }
 
 p {

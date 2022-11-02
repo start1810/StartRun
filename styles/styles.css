@@ -15,7 +15,6 @@ body {
 	font-family: helvetica, sans-serif;
 	font-weight: bold;
 	font-size: xx-large;
-	margin-top: 200px;
 	color:  #444;
 }
 
@@ -34,4 +33,5 @@ button {
 	font-size: large;
 	background: #f1b112;
 	padding: 5%;
+	width: 80vw;
 }

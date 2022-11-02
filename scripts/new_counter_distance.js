@@ -13,6 +13,7 @@ let currentLongitude = 0;
 startBtn1.addEventListener('click', function () {
   runFlag = true; 
   countDistance();
+  startBtn1.remove();
 }); 
 
 pausedBtn1.addEventListener('click', function () { 

@@ -58,6 +58,6 @@ button {
 	float: left;
 }
 
-#invisible {
+.invisible {
 	display: none;
 }

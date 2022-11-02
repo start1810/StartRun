@@ -1,40 +1,37 @@
+@font-face {
+	font-weight: bold;
+	font-family: helvetica;
+	src:  url("../fonts/Helvetica/helvetica_bold.otf");
+}
+
 body {
-	margin: 5vh 5vw;
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
 }
 
 #distance {
 	text-align: center;
-	height: 40vh;
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	font-size: xx-large;
+	margin-top: 200px;
+	color:  #444;
 }
 
-#distance h1 {
-	padding-top: 20vw;
-	font-size: 30vw;
-	margin: 0;
-}
-
-.secondlineelements {
-	height: 20vh;
-	float: left;
-	width: auto;
+table {
 	text-align: center;
-	font-size: 9vw;
-	padding: 1vw;
+	margin: auto;
+	font-size: 40px;
 }
 
-#speedminkm {
-	width: 20vw;
-}
-
-#speedkmh {
-	width:  20vw;
-}
-
-p {
-	margin: 0;
+td {
+	width: 200px;
 }
 
 button {
-	width: 90vw;
-	text-align: center;
+	margin: auto;
+	font-size: large;
+	background: #f1b112;
+	padding: 5%;
 }

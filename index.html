@@ -11,28 +11,39 @@
     <p>Расстояние</p>
     <h1 id="distanceinkm">00.000</h1>
   </div>
-  <div id='speedminkm' class='secondlineelements'>
-    <p>0.00</p>
-    <p>мин/км</p>
-  </div>
-  <div id="time" class='secondlineelements'> 
-            <span class="digit" id="hr"> 
-              00</span> 
-            <span class="txt">:</span> 
-            <span class="digit" id="min"> 
-              00</span> 
-            <span class="txt">:</span> 
-            <span class="digit" id="sec"> 
-              00</span> 
+  <table>
+    <tr>
+      <td>
+        <div id='speedminkm' class='secondlineelements'>
+          <p class="digit">0.00</p>
+          <p>мин/км</p>
         </div>
-  <div id='speedkmh' class='secondlineelements'>
-    <p>0.00</p>
-    <p>км/ч</p>
-  </div>
-
+      </td>
+      <td>
+        <div id="time"> 
+          <span class="digit" id="hr">00</span> 
+          <span class="txt">:</span> 
+          <span class="digit" id="min">00</span> 
+          <span class="txt">:</span> 
+          <span class="digit" id="sec">00</span> 
+        </div>
+      </td>
+      <td>
+        <div id='speedkmh' class='secondlineelements'>
+          <p class="digit">0.00</p>
+          <p>км/ч</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+  
   <button id='start'>начать тренировку</button>
+  <br>
   <button id='pause'>пауза</button>
+  <br>
   <button id='stop'>закончить тренировку тренировку</button>
+  <br>
   <button id='return'>продолжить тренировку</button>
   
   <script src="./scripts/new_counter_distance.js"></script>

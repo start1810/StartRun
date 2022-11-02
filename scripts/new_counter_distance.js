@@ -55,8 +55,8 @@ const countDistance = () => {
     oldLatitude = currentLatitude;
 		oldLongitude = currentLongitude;
 		console.log(distanceKm);
-    document.querySelector('#distanceinkm').textContent = `${distanceKm}`.slice(0,5);
+    document.querySelector('#distanceinkm').textContent = `${distanceKm}`.slice(0,4);
     
-		setTimeout(countDistance, 5000);
+		setTimeout(countDistance, 3000);
 	}
 };

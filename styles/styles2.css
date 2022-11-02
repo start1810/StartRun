@@ -1,0 +1,51 @@
+@font-face {
+	font-weight: bold;
+	font-family: helvetica;
+	src:  url("../fonts/Helvetica/helvetica_bold.otf");
+}
+
+.app {
+	height: 100vh;
+	margin: auto;
+	width: 50vh;
+	text-align: center;
+}
+
+#distanceinkm {
+	font-weight: bold;
+	font-size: 15vh;
+	padding-top: 12vh;
+	margin: 0;
+}
+
+#distance p {
+	font-size: 3vh;
+	padding-bottom: 5vh;
+}
+
+table {
+	width: 50vh;
+	font-size: 5vh;
+}
+
+p {
+	margin: 0;
+}
+
+#speedminkm {
+	width: 10vh;
+}
+
+#speedkmh {
+	width: 10vh;
+}
+
+.text {
+	font-size: 3vh;
+}
+
+button{
+	width: 45vh;
+	height: 10vh;
+	font-size: 3vh;
+}

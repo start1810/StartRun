@@ -3,48 +3,50 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Start Run</title>
-<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/styles2.css">
 </head>
  
 <body>
-  <div id='distance'>
-    <p>Расстояние</p>
-    <h1 id="distanceinkm">00.000</h1>
+  <div class='app'>
+    <div id='distance'>
+      <h1 id="distanceinkm">00.00</h1>
+      <p>км</p>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <div id='speedminkm' class='secondlineelements'>
+            <p class="digit">0.00</p>
+            <p class='text'>мин/км</p>
+          </div>
+        </td>
+        <td>
+          <div id="time"> 
+            <span class="digit" id="hr">00</span> 
+            <span class="txt">:</span> 
+            <span class="digit" id="min">00</span> 
+            <span class="txt">:</span> 
+            <span class="digit" id="sec">00</span> 
+          </div>
+        </td>
+        <td>
+          <div id='speedkmh' class='secondlineelements'>
+            <p class="digit">0.00</p>
+            <p class='text'>км/ч</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    
+    
+    <button id='start'>начать тренировку</button>
+    <br>
+    <button id='pause'>пауза</button>
+    <br>
+    <button id='return'>продолжить тренировку</button>
+    <br>
+    <button id='stop'>закончить тренировку</button>
   </div>
-  <table>
-    <tr>
-      <td>
-        <div id='speedminkm' class='secondlineelements'>
-          <p class="digit">0.00</p>
-          <p>мин/км</p>
-        </div>
-      </td>
-      <td>
-        <div id="time"> 
-          <span class="digit" id="hr">00</span> 
-          <span class="txt">:</span> 
-          <span class="digit" id="min">00</span> 
-          <span class="txt">:</span> 
-          <span class="digit" id="sec">00</span> 
-        </div>
-      </td>
-      <td>
-        <div id='speedkmh' class='secondlineelements'>
-          <p class="digit">0.00</p>
-          <p>км/ч</p>
-        </div>
-      </td>
-    </tr>
-  </table>
-  
-  
-  <button id='start'>начать тренировку</button>
-  <br>
-  <button id='pause'>пауза</button>
-  <br>
-  <button id='stop'>закончить тренировку тренировку</button>
-  <br>
-  <button id='return'>продолжить тренировку</button>
   
   <script src="./scripts/new_counter_distance.js"></script>
   <script src="./scripts/timer.js"></script>

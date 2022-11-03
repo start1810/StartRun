@@ -1,7 +1,7 @@
 let startBtn1 = document.querySelector('#start'); 
 let pausedBtn1 = document.querySelector('#pause');
 let returnBtn1 = document.querySelector('#return');
-
+let stopBtn1 = document.querySelector('#stop');
  
 let distanceKm = 0; 
 let oldLatitude = 0;
@@ -14,15 +14,22 @@ startBtn1.addEventListener('click', function () {
   runFlag = true; 
   countDistance();
   startBtn1.remove();
+  pausedBtn1.classList = [];
 }); 
 
 pausedBtn1.addEventListener('click', function () { 
-  runFlag = false; 
+  runFlag = false;
+  returnBtn1.classList = [];
+  stopBtn1.classList = [];
+  pausedBtn1.classList.add('invisible'); 
 }); 
 
 returnBtn1.addEventListener('click', function () {
   runFlag = true;
   countDistance();
+  pausedBtn1.classList = [];
+  stopBtn1.classList.add('invisible');
+  returnBtn1.classList.add('invisible');
 });
 
 const distanceCounter = (oldLat, oldLong, currentLat, currentLong) => {
@@ -43,6 +50,7 @@ const success = (position) => {
 	currentLatitude = position.coords.latitude;
 	currentLongitude = position.coords.longitude;
   accuracyKm = position.coords.accuracy / 1000;
+  console.log(`${oldLatitude} ; ${oldLongitude}`);
 	console.log(`${currentLatitude} ; ${currentLongitude}: ${accuracyKm}`);
 };
 
@@ -50,7 +58,7 @@ const countDistance = () => {
 	if (runFlag === true) {
 		navigator.geolocation.getCurrentPosition(success);
 		const distBetweenPoints = distanceCounter(oldLatitude, oldLongitude, currentLatitude, currentLongitude);
-	  if (distBetweenPoints < 10 && distBetweenPoints > accuracyInKm * 0.8) {
+	  if ((distBetweenPoints < 10) && (distBetweenPoints > (accuracyKm * 0))) {
       distanceKm += distBetweenPoints;
       oldLatitude = currentLatitude;
       oldLongitude = currentLongitude;
@@ -62,6 +70,9 @@ const countDistance = () => {
 	}
 };
 
-navigator.geolocation.getCurrentPosition(success);
-oldLatitude = currentLatitude;
-oldLongitude = currentLongitude;
+const getOldCoord = (position) => {
+  oldLatitude = position.coords.latitude;
+  oldLongitude = position.coords.longitude;
+}
+
+navigator.geolocation.getCurrentPosition(getOldCoord);

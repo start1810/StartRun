@@ -1,7 +1,13 @@
-@font-face {
+font-face {
 	font-weight: bold;
 	font-family: helvetica;
-	src:  url("../fonts/Helvetica/helvetica_bold.otf");
+	src:  url("../fonts/Helvetica/helvetica_boldoblique.otf");
+}
+
+body {
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	font-style: oblique;
 }
 
 .app {

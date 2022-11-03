@@ -15,8 +15,8 @@ body {
 	margin: auto;
 	width: 50vh;
 	text-align: center;
-	background-color: #333333;
-	color: white;
+	background: linear-gradient(orange 55%, black 70%);
+	color: black;
 }
 
 #distanceinkm {
@@ -53,27 +53,35 @@ p {
 }
 
 button{
-	width: 45vh;
-	height: 20vh;
+	height: 30vh;
+	width: 30vh;
 	font-size: 3vh;
-	background-color: #f1b112;
+	background-color: orange;
+	color: black;
+	
 }
 
 #start {
 	margin-top: 10vh;
+	border-radius: 50%;
 }
 
 #pause {
 	margin-top: 8vh;
+	border-radius: 50%;
 }
 
 #return {
 	margin-top: 6vh;
-	height: 10vh;
+	border-radius: 50%;
 }
 
 #stop {
 	height: 10vh;
+	width: 10vh;
+	margin-left: 20vh;
+	border-radius: 50%;
+	
 }
 
 .invisible {

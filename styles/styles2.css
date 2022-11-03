@@ -9,6 +9,8 @@
 	margin: auto;
 	width: 50vh;
 	text-align: center;
+	background-color: #333333;
+	color: white;
 }
 
 #distanceinkm {
@@ -41,14 +43,31 @@ p {
 }
 
 .text {
-	font-size: 3vh;
+	font-size: 2vh;
 }
 
 button{
 	width: 45vh;
-	height: 10vh;
+	height: 20vh;
 	font-size: 3vh;
-	margin: 1vh;
+	background-color: #f1b112;
+}
+
+#start {
+	margin-top: 10vh;
+}
+
+#pause {
+	margin-top: 8vh;
+}
+
+#return {
+	margin-top: 6vh;
+	height: 10vh;
+}
+
+#stop {
+	height: 10vh;
 }
 
 .invisible {

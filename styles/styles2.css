@@ -8,6 +8,7 @@ body {
 	font-family: helvetica, sans-serif;
 	font-weight: bold;
 	font-style: oblique;
+	background-color: #696969;
 }
 
 .app {
@@ -59,13 +60,18 @@ button{
 	background-color: orange;
 	color: black;
 	opacity: 60%;
-	border: solid black;
+	border: solid black 1vh;
 	
 }
 
 #start {
 	margin-top: 10vh;
 	border-radius: 50%;
+	transition: background-color 0.3s ease-in-out;
+}
+
+#start:hover {
+	background-color: aqua;
 }
 
 #pause {

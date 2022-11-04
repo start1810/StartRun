@@ -27,11 +27,11 @@ function stopCount() {
 		if (deltaDistance === 0) {
 			speedminkm = 0;
 		} else {
-			speedminkm = 5 / (deltaDistance);
+			speedminkm = 6 / (deltaDistance);
 		}
 		console.log(currentDistance);
 		console.log(oldDistance);
 		document.querySelector('#speedminkm > .digit').textContent = `${speedminkm}`.slice(0,4);
 	}
-	setTimeout(stopCount, 5000)
+	setTimeout(stopCount, 6000);
 }

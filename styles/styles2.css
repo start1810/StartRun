@@ -29,12 +29,19 @@ body {
 
 #distance p {
 	font-size: 3vh;
-	padding-bottom: 5vh;
+	padding-bottom: 2vh;
 }
 
 table {
 	width: 50vh;
 	font-size: 5vh;
+}
+#time {
+	margin-top: 10vh;
+}
+
+td {
+	vertical-align: top;
 }
 
 p {
@@ -48,6 +55,9 @@ p {
 #speedkmh {
 	width: 10vh;
 }
+
+
+
 
 .text {
 	font-size: 2vh;
@@ -70,8 +80,8 @@ button{
 	transition: background-color 0.3s ease-in-out;
 }
 
-#start:hover {
-	background-color: aqua;
+button:hover {
+	opacity: 100%;
 }
 
 #pause {

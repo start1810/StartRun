@@ -58,7 +58,7 @@ const countDistance = () => {
 	if (runFlag === true) {
 		navigator.geolocation.getCurrentPosition(success);
 		const distBetweenPoints = distanceCounter(oldLatitude, oldLongitude, currentLatitude, currentLongitude);
-	  if ((distBetweenPoints < 10) && (distBetweenPoints > (accuracyKm * 0))) {
+	  if ((distBetweenPoints < 10) && (distBetweenPoints > (accuracyKm * 0.8))) {
       distanceKm += distBetweenPoints;
       oldLatitude = currentLatitude;
       oldLongitude = currentLongitude;

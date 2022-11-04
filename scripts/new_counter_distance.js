@@ -11,7 +11,8 @@ let currentLongitude = 0;
 let accuracyKm = 0;
 
 startBtn1.addEventListener('click', function () {
-  runFlag = true; 
+  runFlag = true;
+  navigator.geolocation.getCurrentPosition(getOldCoord); 
   countDistance();
   startBtn1.remove();
   pausedBtn1.classList = [];

@@ -47,8 +47,8 @@ const distanceCounter = (oldLat, oldLong, currentLat, currentLong) => {
 };
 
 const success = (position) => {
-	currentLatitude = position.coords.latitude;
-	currentLongitude = position.coords.longitude;
+	currentLatitude = Math.round(position.coords.latitude * 1000000) / 1000000;
+	currentLongitude = Math.round(position.coords.longitude * 1000000) / 1000000;
   accuracyKm = position.coords.accuracy / 1000;
   console.log(`${oldLatitude} ; ${oldLongitude}`);
 	console.log(`${currentLatitude} ; ${currentLongitude}: ${accuracyKm}`);
@@ -71,8 +71,8 @@ const countDistance = () => {
 };
 
 const getOldCoord = (position) => {
-  oldLatitude = position.coords.latitude;
-  oldLongitude = position.coords.longitude;
+  oldLatitude = Math.round(position.coords.latitude * 1000000) / 1000000;
+  oldLongitude = Math.round(position.coords.longitude * 1000000) / 1000000
 }
 
 navigator.geolocation.getCurrentPosition(getOldCoord);

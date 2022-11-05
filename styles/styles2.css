@@ -81,14 +81,22 @@ button{
 	border: solid black 1vh;
 }
 
+img {
+	max-width: 100%;
+  	height: auto;
+  	vertical-align: middle;
+}
+
 #start {
 	margin-top: 10vh;
 	border-radius: 50%;
 	transition: background-color 0.3s ease-in-out;
 }
 
-button span {
-	margin-left: 2vh;
+#start img {
+	max-width: 70%;
+  	height: auto;
+  	vertical-align: middle;
 }
 
 button:hover {
@@ -100,9 +108,21 @@ button:hover {
 	border-radius: 50%;
 }
 
+#pause img {
+	max-width: 50%;
+  	height: auto;
+  	vertical-align: middle;
+}
+
 #return {
 	margin-top: 5vh;
 	border-radius: 50%;
+}
+
+#return img {
+	max-width: 70%;
+  	height: auto;
+  	vertical-align: middle;
 }
 
 #stop {
@@ -113,13 +133,12 @@ button:hover {
 	border-radius: 50%;	
 }
 
-#stop span {
-	background-color: black;
-	width: 8vh;
-	height: 6vh;
-	margin: 0;
-	font-size: 4vh;
+#stop img {
+	max-width: 50%;
+  	height: auto;
+  	vertical-align: middle;
 }
+
 
 .invisible {
 	display: none;

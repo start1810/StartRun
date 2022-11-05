@@ -67,12 +67,11 @@ p {
 button{
 	height: 25vh;
 	width: 25vh;
-	font-size: 3vh;
+	font-size: 10vh;
 	background-color: orange;
 	color: black;
 	opacity: 60%;
 	border: solid black 1vh;
-	
 }
 
 #start {
@@ -81,31 +80,38 @@ button{
 	transition: background-color 0.3s ease-in-out;
 }
 
+button span {
+	margin-left: 2vh;
+}
+
 button:hover {
 	opacity: 100%;
 }
 
 #pause {
-	margin-top: 8vh;
+	margin-top: 7.5vh;
 	border-radius: 50%;
 }
 
 #return {
-	margin-top: 6vh;
+	margin-top: 5vh;
 	border-radius: 50%;
 }
 
 #stop {
 	height: 10vh;
 	width: 10vh;
-	margin-left: 20vh;
+	margin-top: 0vh;
+	margin-left: 40vh;
 	border-radius: 50%;	
 }
 
 #stop span {
 	background-color: black;
-	width: 5vh;
-	height: 5vh;
+	width: 8vh;
+	height: 6vh;
+	margin: 0;
+	font-size: 4vh;
 }
 
 .invisible {

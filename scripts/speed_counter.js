@@ -2,9 +2,10 @@ let startBtn2 = document.querySelector('#start');
 let pausedBtn2 = document.querySelector('#pause');
 let returnBtn2 = document.querySelector('#return');
 
-let speedminkm = 0;
-let oldDistance = 0;
-
+let avgSpeed = 0;
+let time = 0;
+let min = 0;
+let sec = 0;
 
 startBtn2.addEventListener('click', function () {
     timer = true; 
@@ -23,15 +24,16 @@ returnBtn2.addEventListener('click', function () {
 function stopCount() {
 	if (timer) {
 		const currentDistance = Number(document.querySelector('#distanceinkm').textContent);
-		const deltaDistance = currentDistance - oldDistance;
-		if (deltaDistance === 0) {
-			speedminkm = 0;
-		} else {
-			speedminkm = 6 / (deltaDistance);
+		if ((time != 0) && (currentDistance != 0)) {
+			avgSpeed = Math.round(time / currentDistance);
+			sec = avgSpeed % 60;
+			min = Math.round(avgSpeed / 60);
 		}
-		console.log(currentDistance);
-		console.log(oldDistance);
-		document.querySelector('#speedminkm > .digit').textContent = `${speedminkm}`.slice(0,4);
+		console.log(avgSpeed);
+		console.log(min);
+		console.log(sec);
+		document.querySelector('#speedminkm > .digit').textContent = `${min}'${sec}"`;
+		time += 6;
 	}
 	setTimeout(stopCount, 6000);
-}
+};

@@ -68,7 +68,7 @@ const countDistance = () => {
 		console.log(distanceKm);
     document.querySelector('#distanceinkm').textContent = `${distanceKm}`.slice(0,4);
     
-		setTimeout(countDistance, 1000);
+		setTimeout(countDistance, 3000);
 	}
 };
 

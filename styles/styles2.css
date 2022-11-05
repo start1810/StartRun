@@ -9,6 +9,13 @@ body {
 	font-weight: bold;
 	font-style: oblique;
 	background-color: #696969;
+	overflow: 'hidden',
+    height: '100%'
+}
+
+head {
+	overflow: 'hidden',
+    height: '100%'
 }
 
 .app {

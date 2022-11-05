@@ -13,8 +13,8 @@ body {
 
 .app {
 	height: 100vh;
-	margin: auto;
-	width: 50vh;
+	margin: 0;
+	width: 100vw;
 	text-align: center;
 	background: linear-gradient(orange, black );
 	color: black;
@@ -35,6 +35,7 @@ body {
 table {
 	width: 50vh;
 	font-size: 5vh;
+	margin: auto;
 }
 #time {
 	margin-top: 10vh;
@@ -98,8 +99,13 @@ button:hover {
 	height: 10vh;
 	width: 10vh;
 	margin-left: 20vh;
-	border-radius: 50%;
-	
+	border-radius: 50%;	
+}
+
+#stop span {
+	background-color: black;
+	width: 5vh;
+	height: 5vh;
 }
 
 .invisible {

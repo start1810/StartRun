@@ -27,6 +27,7 @@ pausedBtn1.addEventListener('click', function () {
 
 returnBtn1.addEventListener('click', function () {
   runFlag = true;
+  navigator.geolocation.getCurrentPosition(getOldCoord);
   countDistance();
   pausedBtn1.classList = [];
   stopBtn1.classList.add('invisible');
@@ -67,7 +68,7 @@ const countDistance = () => {
 		console.log(distanceKm);
     document.querySelector('#distanceinkm').textContent = `${distanceKm}`.slice(0,4);
     
-		setTimeout(countDistance, 3000);
+		setTimeout(countDistance, 1000);
 	}
 };
 

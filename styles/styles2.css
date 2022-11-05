@@ -94,7 +94,7 @@ img {
 }
 
 #start img {
-	max-width: 70%;
+	max-width: 12vh;
   	height: auto;
   	vertical-align: middle;
 }
@@ -109,7 +109,7 @@ button:hover {
 }
 
 #pause img {
-	max-width: 50%;
+	width: 12vh;
   	height: auto;
   	vertical-align: middle;
 }
@@ -120,9 +120,9 @@ button:hover {
 }
 
 #return img {
-	max-width: 70%;
+	max-width: 12vh;
   	height: auto;
-  	vertical-align: middle;
+  	align-self: center;
 }
 
 #stop {
@@ -134,9 +134,10 @@ button:hover {
 }
 
 #stop img {
-	max-width: 50%;
+	width: 5vh;
   	height: auto;
-  	vertical-align: middle;
+  	margin: 0;
+  	
 }
 
 
